@@ -1,0 +1,153 @@
+.header {
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    padding: 0px;
+}
+
+.logo {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header-menu {
+    line-height: 64px;
+}
+
+.mainLayout {
+    margin-top: 2px;
+    min-height: 930px;
+}
+
+.sider-menu {
+    height: 100%;
+    border-right: 0;
+}
+
+.inner-layout {
+    padding: 0 2px;
+}
+
+nz-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+}
+
+.content1 {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.allWork {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.allWork li {
+    list-style: none;
+    float: left;
+    position: relative;
+    flex: 0 0 17%;
+    margin-top: 32px;
+}
+
+.allWork li a {
+    display: block;
+    width: 182px;
+    height: 172px;
+    background: pink;
+}
+
+.allWork li a .name {
+    background: #4ccc8a;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.allWork li a .workNew {
+    height: 147px;
+    background: #02F78E;
+    padding-top: 16px;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.allWork li a .workNew .left {
+    float: left;
+    width: 66px;
+    height: 82px;
+    background: pink;
+}
+
+.allWork li a .workNew .right {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    margin-left: 4px;
+}
+
+.page {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.content2 {
+    margin-top: 2px;
+}
+
+.content2 .workError {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content2 .workError .warn {
+    width: 395px;
+    height: 380px;
+    background: #f7f7f7;
+    margin-left: -60px;
+    padding: 16px 30px 0px;
+}
+
+.content2 .workError .warn ul {
+    padding-inline-start: 0px;
+    margin-top: 30px;
+    overflow-y: auto;
+}
+
+.content2 .workError .warn ul li {
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-top: 10px;
+}
+
+.content2 .workError .searchNews {
+    width: 680px;
+    height: 380px;
+    background: #f1f1f1;
+    margin-right: -50px;
+    /* overflow-y: scroll; */
+}
+
+.content2 .workError .searchNews .search {
+    height: 52px;
+}
+
+.content2 .workError .searchNews .newList {
+    height: 332px;
+    overflow-y: scroll;
+}
+
+.content2 .workError .searchNews .newList th,
+.content2 .workError .searchNews .newList td {
+    text-align: center;
+}

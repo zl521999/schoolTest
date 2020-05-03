@@ -1,0 +1,253 @@
+<nz-layout>
+    <nz-header class="header">
+        <div class="logo">
+            <img src="../../../assets/images/logo.jpg" alt="">
+        </div>
+
+    </nz-header>
+    <nz-layout class="mainLayout">
+        <nz-sider nzWidth="240px" nzTheme="light">
+            <ul nz-menu nzMode="inline" class="sider-menu">
+
+                <li nz-menu-item>
+                    <a [routerLink]="['/home']">首页</a>
+                </li>
+
+                <li nz-submenu nzOpen nzTitle="学生信息">
+                    <ul>
+                        <li nz-menu-item><a [routerLink]="['/personalFiles']">个人档案</a> </li>
+                    </ul>
+                </li>
+                <li nz-submenu nzOpen nzTitle="情况汇总">
+                    <ul>
+                        <li nz-menu-item><a [routerLink]="['/workCollect']">出勤汇总</a> </li>
+                        <li nz-menu-item><a [routerLink]="['/tempertureCollect']">体温汇总</a> </li>
+                        <li nz-menu-item><a [routerLink]="['/heartCollect']">心率汇总</a> </li>
+                        <li nz-menu-item><a [routerLink]="['/locationtCollect']">定位汇总</a> </li>
+                        <li nz-menu-item><a [routerLink]="['/sportCollect']">运动汇总</a></li>
+                        <li nz-menu-item><a [routerLink]="['/environmentCollect']">环境汇总</a></li>
+                        <li nz-menu-item><a [routerLink]="['/warnCollect']">告警汇总</a></li>
+                    </ul>
+                </li>
+                <li nz-submenu nzOpen nzTitle="系统日志">
+                    <ul>
+                        <li nz-menu-item>登录日志</li>
+
+                    </ul>
+                </li>
+                <li nz-submenu nzOpen nzTitle="组成管理">
+                    <ul>
+                        <li nz-menu-item>班级架构编辑</li>
+                        <li nz-menu-item>课表管理</li>
+                        <li nz-menu-item>学校活动管理</li>
+
+                    </ul>
+                </li>
+                <li nz-submenu nzOpen nzTitle="紧急预案通知">
+                    <ul>
+                        <li nz-menu-item>火灾、地震演习发布</li>
+                        <li nz-menu-item>火灾、地震演紧急预案启动</li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </nz-sider>
+        <nz-layout class="inner-layout">
+            <nz-content class="content1">
+                <div class="contentLeft">
+                    <ul class="countList">
+                        <li>
+                            <div class="newsLeft">
+                                <i class="iconfont icon-Thermometer" style="font-size: 100px; color: #f05d5d"></i>
+                            </div>
+                            <div class="newsRight">
+                                <p style="font-weight: bold;">校温度统计</p>
+                                <p>正常：1150人</p>
+                                <p>温度过高：50人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="newsLeft">
+                                <i class="iconfont icon-xinshuai1" style="font-size: 100px; color: #f05d5d"></i>
+                            </div>
+                            <div class="newsRight">
+                                <p style="font-weight: bold;">校心率统计</p>
+                                <p>平均心率：90次/分钟</p>
+                                <p>告警人数：50人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="newsLeft">
+                                <i class="iconfont icon-buhang" style="font-size: 100px; color: #84C1FF	"></i>
+                            </div>
+                            <div class="newsRight">
+                                <p style="font-weight: bold;">校运动统计</p>
+                                <p>校平均步数：567步</p>
+                                <p>健康评估：优</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="newsLeft">
+                                <i class="iconfont icon-lvyou" style="font-size: 100px; color: #8f82bc"></i>
+                            </div>
+                            <div class="newsRight">
+                                <p style="font-weight: bold;">校环境统计</p>
+                                <p>平均湿度：25.1&#176;</p>
+                                <p>平均温度：36%</p>
+                                <p>PM2.5：25μg/m³</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contentRight">
+                    <div class="search">
+                        <nz-input-group nzSearch [nzAddOnAfter]="suffixIconButton">
+                            <input type="text" style="width: 490px; height: 50px;border-radius: 5px 0px 0px 5px;" nz-input placeholder="输入学生姓名" />
+                        </nz-input-group>
+                        <ng-template #suffixIconButton>
+                            <button nz-button nzType="primary" style="width: 50px;height: 50px;border-radius: 0px 5px 5px 0px;" nzSearch><i nz-icon style="font-size: 24px;" nzType="search"></i></button>
+                        </ng-template>
+                    </div>
+                    <div class="personNews">
+                        <div class="image">
+
+                        </div>
+                        <div class="news1">
+                            <p>姓名：许小二</p>
+                            <p style="margin: 0px;">班级：小一1班</p>
+                        </div>
+                        <div class="news2">
+                            <p>设备号：324234</p>
+                            <p style="margin: 0px;">当前状态：在校</p>
+                        </div>
+                        <div class="btn">
+                            <button nz-button nzType="primary" [routerLink]="['/personalFiles']" style=" width: 150px;height:50px;font-size: 16px;border-radius: 5px;">进入个人档案</button>
+                        </div>
+                    </div>
+
+                    <div class="mainNews">
+                        <div class="mainLeft">
+                            <nz-sider nzWidth="200px" nzTheme="light">
+                                <ul nz-menu nzMode="inline" class="classList sider-menu">
+                                    <li nz-submenu nzOpen nzTitle="小学部">
+                                        <ul>
+                                            <li nz-menu-item>小一1班</li>
+                                            <li nz-menu-item>小二1班</li>
+                                            <li nz-menu-item>小三1班</li>
+                                        </ul>
+                                    </li>
+                                    <li nz-submenu nzOpen nzTitle="初中部">
+                                        <ul>
+                                            <li nz-menu-item>初二1班</li>
+                                            <li nz-menu-item>初二2班</li>
+                                            <li nz-menu-item>初二3班</li>
+
+                                        </ul>
+                                    </li>
+                                    <li nz-submenu nzOpen nzTitle="高中部">
+                                        <ul>
+                                            <li nz-menu-item>高一1班</li>
+                                            <li nz-menu-item>高一2班</li>
+                                            <li nz-menu-item>高一3班</li>
+
+                                        </ul>
+                                    </li>
+
+
+                                </ul>
+                            </nz-sider>
+
+                            <ul class=" listCard">
+                                <li>
+                                    <h4>班级体温汇总</h4>
+                                    <div class="number">
+                                        <div class="fault">
+                                            <span>异常数量</span>
+                                            <p>0</p>
+                                        </div>
+                                        <div class="ok">
+                                            <span>正常数量</span>
+                                            <p>35</p>
+                                        </div>
+                                    </div>
+
+                                    <button nz-button [routerLink]="['/tempertureCollect']" nzType="primary" style=" width: 150px;height:36px;font-size: 14px;border-radius: 5px;margin-left:  292px;">进入体温汇总</button>
+
+                                </li>
+                                <li>
+                                    <h4>班级心率汇总</h4>
+                                    <div class="number">
+                                        <div class="fault">
+                                            <span>异常数量</span>
+                                            <p>1</p>
+                                        </div>
+                                        <div class="ok">
+                                            <span>正常数量</span>
+                                            <p>34</p>
+                                        </div>
+                                    </div>
+
+                                    <button nz-button [routerLink]="['/heartCollect']" nzType="primary" style=" width: 150px;height:36px;font-size: 14px;border-radius: 5px;margin-left:  292px;">进入心率汇总</button>
+
+                                </li>
+                                <li>
+                                    <h4>班级运动汇总</h4>
+                                    <div class="number">
+                                        <div class="fault">
+                                            <span>人均步数</span>
+                                            <p>456</p>
+                                        </div>
+                                        <div class="ok">
+                                            <span>总步数</span>
+                                            <p>13676</p>
+                                        </div>
+                                    </div>
+
+                                    <button nz-button [routerLink]="['/sportCollect']" nzType="primary" style=" width: 150px;height:36px;font-size: 14px;border-radius: 5px;margin-left:  292px;">进入运动汇总</button>
+
+                                </li>
+                            </ul>
+
+
+
+
+                        </div>
+                        <div class="mainRight">
+                            <nz-table #basicTable [nzData]="listOfData" [nzShowPagination]="false" [nzBordered]="true">
+                                <thead>
+                                    <tr>
+                                        <th [nzAlign]="'center'" style="font-weight: bold;font-size: 18px;color: #505050;">区域名</th>
+                                        <th [nzAlign]="'center'" style="font-weight: bold;font-size: 18px;color: #505050;">质量</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let data of basicTable.data">
+                                        <td [nzAlign]="'center'">{{ data.name }}</td>
+                                        <td [nzAlign]="'center'">{{ data.level }}</td>
+
+                                    </tr>
+                                    <tr>
+
+                                        <td [nzAlign]="'center'" colspan="2"> <button nz-button nzType="primary" [routerLink]="['/environmentCollect']" style=" width: 150px;height:36px;font-size: 14px;border-radius: 5px;">进入环境汇总</button></td>
+                                    </tr>
+                                </tbody>
+                            </nz-table>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+            </nz-content>
+
+        </nz-layout>
+
+    </nz-layout>
+</nz-layout>

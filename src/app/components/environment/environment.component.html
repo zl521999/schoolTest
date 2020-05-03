@@ -1,0 +1,152 @@
+<nz-layout>
+    <nz-header class="header">
+        <div class="logo">
+            <img src="../../../assets/images/logo.jpg" alt="">
+        </div>
+
+    </nz-header>
+    <nz-layout class="mainLayout">
+        <nz-sider nzWidth="240px" nzTheme="light">
+            <ul nz-menu nzMode="inline" class="sider-menu">
+                <li nz-menu-item>
+                    <a [routerLink]="['/home']">首页</a>
+                </li>
+                <li nz-submenu nzOpen nzTitle="学生信息">
+                    <ul>
+                        <li nz-menu-item><a [routerLink]="['/personalFiles']">个人档案</a> </li>
+                    </ul>
+                </li>
+                <li nz-submenu nzOpen nzTitle="情况汇总">
+                    <ul>
+                        <li nz-menu-item><a [routerLink]="['/workCollect']">出勤汇总</a> </li>
+                        <li nz-menu-item><a [routerLink]="['/tempertureCollect']">体温汇总</a> </li>
+                        <li nz-menu-item><a [routerLink]="['/heartCollect']">心率汇总</a> </li>
+                        <li nz-menu-item><a [routerLink]="['/locationtCollect']">定位汇总</a> </li>
+                        <li nz-menu-item><a [routerLink]="['/sportCollect']">运动汇总</a></li>
+                        <li nz-menu-item><a [routerLink]="['/environmentCollect']">环境汇总</a></li>
+                        <li nz-menu-item><a [routerLink]="['/warnCollect']">告警汇总</a></li>
+                    </ul>
+                </li>
+                <li nz-submenu nzOpen nzTitle="系统日志">
+                    <ul>
+                        <li nz-menu-item>登录日志</li>
+
+                    </ul>
+                </li>
+                <li nz-submenu nzOpen nzTitle="组成管理">
+                    <ul>
+                        <li nz-menu-item>班级架构编辑</li>
+                        <li nz-menu-item>课表管理</li>
+                        <li nz-menu-item>学校活动管理</li>
+
+                    </ul>
+                </li>
+                <li nz-submenu nzOpen nzTitle="紧急预案通知">
+                    <ul>
+                        <li nz-menu-item>火灾、地震演习发布</li>
+                        <li nz-menu-item>火灾、地震演紧急预案启动</li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </nz-sider>
+        <nz-layout class="inner-layout">
+            <nz-content class="content1">
+                <h4>环境汇总</h4>
+
+
+
+                <div class="map">
+
+                    <ul class="circleNews">
+                        <li>地点：音乐教室</li>
+                        <li>温度：24.8&#176;</li>
+                        <li>湿度：36%</li>
+                        <li>PM2.5：25 μg/m³</li>
+                        <li>空气质量：优</li>
+                    </ul>
+
+                    <div class="circleMain1">
+                        <div class="innerCirle">
+                            <span>1</span>
+                        </div>
+                        <div class="circle"></div>
+                        <div class="down"></div>
+                    </div>
+                    <div class="circleMain2">
+                        <div class="innerCirle">
+                            <span>2</span>
+                        </div>
+                        <div class="circle"></div>
+                        <div class="down"></div>
+                    </div>
+                    <div class="circleMain3">
+                        <div class="innerCirle">
+                            <span>3</span>
+                        </div>
+                        <div class="circle"></div>
+                        <div class="down"></div>
+                    </div>
+                    <div class="circleMain4">
+                        <div class="innerCirle">
+                            <span>4</span>
+                        </div>
+                        <div class="circle"></div>
+                        <div class="down"></div>
+                    </div>
+                    <div class="circleMain5">
+                        <div class="innerCirle">
+                            <span>5</span>
+                        </div>
+                        <div class="circle"></div>
+                        <div class="down"></div>
+                    </div>
+                    <div class="circleMain6">
+                        <div class="innerCirle">
+                            <span>6</span>
+                        </div>
+                        <div class="circle"></div>
+                        <div class="down"></div>
+                    </div>
+                    <div class="circleMain7">
+                        <div class="innerCirle">
+                            <span>7</span>
+                        </div>
+                        <div class="circle"></div>
+                        <div class="down"></div>
+                    </div>
+                    <div class="circleMain8">
+                        <div class="innerCirle">
+                            <span>8</span>
+                        </div>
+                        <div class="circle"></div>
+                        <div class="down"></div>
+                    </div>
+
+                    <img class="images" src="../../../assets/images/map.png" alt="">
+                </div>
+
+            </nz-content>
+
+        </nz-layout>
+        <nz-sider nzWidth="200px" nzTheme="light">
+            <ul nz-menu nzMode="inline" class="sider-menu">
+                <li nz-submenu nzOpen nzTitle="楼层">
+                    <ul>
+                        <li nz-menu-item>F1</li>
+                        <li nz-menu-item>F2</li>
+                        <li nz-menu-item>F3</li>
+                        <li nz-menu-item>F4</li>
+                        <li nz-menu-item>F5</li>
+                        <li nz-menu-item>F6</li>
+
+                    </ul>
+                </li>
+
+
+
+            </ul>
+        </nz-sider>
+    </nz-layout>
+</nz-layout>

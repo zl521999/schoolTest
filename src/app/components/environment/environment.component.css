@@ -1,0 +1,193 @@
+.header {
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    padding: 0px;
+}
+
+.logo {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header-menu {
+    line-height: 64px;
+}
+
+.mainLayout {
+    margin-top: 2px;
+    min-height: 930px;
+}
+
+.sider-menu {
+    height: 100%;
+    border-right: 0;
+}
+
+.inner-layout {
+    padding: 0 2px;
+}
+
+nz-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+}
+
+.content1 h4 {
+    color: #8c8c8c;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content1 .map .images {
+    width: 1010px;
+    height: 890px;
+    display: block;
+    margin: 0 auto;
+}
+
+.content1 .map .circleNews {
+    width: 242px;
+    height: 122px;
+    background: #d2e28c;
+    padding-inline-start: 0px;
+    opacity: 0.8;
+    padding: 8px;
+    position: relative;
+    left: 390px;
+    top: 640px;
+    z-index: 10;
+}
+
+.content1 .map .circleNews li {
+    list-style: none;
+    color: #383838;
+    font-weight: bold;
+}
+
+.content1 .map .circleMain1 {
+    position: relative;
+    left: 290px;
+    top: 240px;
+    z-index: 10;
+}
+
+.content1 .map .circleMain2 {
+    position: relative;
+    left: 350px;
+    top: 620px;
+    z-index: 10;
+}
+
+.content1 .map .circleMain3 {
+    position: relative;
+    left: 650px;
+    top: 180px;
+    z-index: 10;
+}
+
+.content1 .map .circleMain4 {
+    position: relative;
+    left: 600px;
+    top: 700px;
+    z-index: 10;
+}
+
+.content1 .map .circleMain5 {
+    position: relative;
+    left: 1050px;
+    top: 650px;
+    z-index: 10;
+}
+
+.content1 .map .circleMain6 {
+    position: relative;
+    left: 1050px;
+    top: 280px;
+    z-index: 10;
+}
+
+.content1 .map .circleMain7 {
+    position: relative;
+    left: 1050px;
+    top: 120px;
+    z-index: 10;
+}
+
+.content1 .map .circleMain8 {
+    position: relative;
+    left: 700px;
+    top: 420px;
+    z-index: 10;
+}
+
+.content1 .map .circleMain1 .circle,
+.content1 .map .circleMain2 .circle,
+.content1 .map .circleMain3 .circle,
+.content1 .map .circleMain4 .circle,
+.content1 .map .circleMain5 .circle,
+.content1 .map .circleMain6 .circle,
+.content1 .map .circleMain7 .circle,
+.content1 .map .circleMain8 .circle {
+    background-color: #aacb19;
+    border: 1px solid #aacb19;
+    border-radius: 30px;
+    height: 42px;
+    position: absolute;
+    width: 42px;
+}
+
+.content1 .map .circleMain1 .innerCirle,
+.content1 .map .circleMain2 .innerCirle,
+.content1 .map .circleMain3 .innerCirle,
+.content1 .map .circleMain4 .innerCirle,
+.content1 .map .circleMain5 .innerCirle,
+.content1 .map .circleMain6 .innerCirle,
+.content1 .map .circleMain7 .innerCirle,
+.content1 .map .circleMain8 .innerCirle {
+    background-color: #aacb19;
+    border: 12px solid #fff;
+    border-radius: 20px;
+    height: 24px;
+    left: 9px;
+    position: absolute;
+    top: 9px;
+    width: 24px;
+    z-index: 2;
+}
+
+.content1 .map .circleMain1 .innerCirle span,
+.content1 .map .circleMain2 .innerCirle span,
+.content1 .map .circleMain3 .innerCirle span,
+.content1 .map .circleMain4 .innerCirle span,
+.content1 .map .circleMain5 .innerCirle span,
+.content1 .map .circleMain6 .innerCirle span,
+.content1 .map .circleMain7 .innerCirle span,
+.content1 .map .circleMain8 .innerCirle span {
+    font-size: 14px;
+    color: #aacb19;
+    position: absolute;
+    left: -4px;
+    top: -11px;
+    font-weight: bold;
+}
+
+.content1 .map .circleMain1 .down,
+.content1 .map .circleMain2 .down,
+.content1 .map .circleMain3 .down,
+.content1 .map .circleMain4 .down,
+.content1 .map .circleMain5 .down,
+.content1 .map .circleMain6 .down,
+.content1 .map .circleMain7 .down,
+.content1 .map .circleMain8 .down {
+    left: 5px;
+    position: absolute;
+    top: 35px;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 22px solid #aacb19;
+    height: 0;
+    width: 0;
+}

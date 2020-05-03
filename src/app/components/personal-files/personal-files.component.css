@@ -1,0 +1,269 @@
+.header {
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    padding: 0px;
+}
+
+.logo {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header-menu {
+    line-height: 64px;
+}
+
+.mainLayout {
+    margin-top: 2px;
+    min-height: 930px;
+}
+
+.sider-menu {
+    height: 100%;
+    border-right: 0;
+}
+
+.inner-layout {
+    padding: 0 2px;
+}
+
+nz-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+}
+
+.content1 .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.content1 .top div {
+    width: 416px;
+    height: 296px;
+    border: 1px solid #e5e5e5;
+}
+
+.content1 .top .personInSchool,
+.content1 .top .personHeart,
+.content1 .top .personNews {
+    padding: 20px 14px 0px;
+}
+
+.content1 .top .personInSchool h4,
+.content1 .top .personHeart h4,
+.content1 .top .personNews h4 {
+    font-weight: bold;
+    color: #8c8c8c;
+    font-size: 24px;
+}
+
+.content1 .top .personHeart p {
+    color: #262626;
+    font-size: 18px;
+}
+
+.content1 .top .personNews {
+    position: relative;
+}
+
+.content1 .top .personNews .names {
+    float: left;
+    border: none;
+    width: 150px;
+    height: 140px;
+}
+
+.content1 .top .personNews .image {
+    width: 110px;
+    height: 130px;
+    background: pink;
+    border: none;
+    float: right;
+}
+
+.content1 .top .personNews .line {
+    width: 90%;
+    height: 2px;
+    background: #e8e8e8;
+    position: absolute;
+    bottom: 60px;
+}
+
+.content1 .top .personNews .device {
+    border: none;
+    width: 340px;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content1 .top .personNews .device p {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.content1 .top .personInSchool ul {
+    text-align: center;
+    padding-inline-start: 0px;
+}
+
+.content1 .top .personInSchool ul li {
+    list-style: none;
+    border-bottom: 5px solid #e8e8e8;
+    color: #262626;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+}
+
+.content1 .top .personInSchool ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.content1 .top .personInSchool ul li span {
+    color: #d43030;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.content1 .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1 .bottom .location {
+    width: 716px;
+    height: 566px;
+    border: 1px solid #e5e5e5;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1 .bottom .location .left h4 {
+    font-weight: bold;
+    color: #8c8c8c;
+    font-size: 24px;
+}
+
+.content1 .bottom .location .left p {
+    font-size: 20px;
+    color: #595959;
+}
+
+.content1 .bottom .location .left .floor {
+    width: 54px;
+    height: 264px;
+    border: 1px solid #c9c9c9;
+    padding-inline-start: 0px;
+    line-height: 2;
+}
+
+.content1 .bottom .location .left .floor li {
+    border-bottom: 2px solid #efefef;
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    color: #00002f;
+    cursor: pointer;
+}
+
+.content1 .bottom .location .left .floor li:last-child {
+    border: none
+}
+
+.content1 .bottom .location .right {
+    margin-top: 30px;
+    position: relative;
+}
+
+.content1 .bottom .location .right .iconfont {
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+}
+
+.content1 .bottom .situation {
+    width: 570px;
+    height: 566px;
+}
+
+.content1 .bottom .situation .sport {
+    padding: 15px 40px 34px;
+    height: 404px;
+    border: 1px solid #e5e5e5;
+}
+
+.content1 .bottom .situation .sport h4 {
+    font-weight: bold;
+    color: #8c8c8c;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.content1 .bottom .situation .sport .time {
+    width: 412px;
+    height: 36px;
+    border: 1px solid #e5e5e5;
+    padding-inline-start: 0px;
+    margin: 0 auto 72px;
+}
+
+.content1 .bottom .situation .sport .time li {
+    text-align: center;
+    color: #808080;
+    font-size: 16px;
+    list-style: none;
+    float: left;
+    line-height: 36px;
+    border-right: 1px solid #e5e5e5;
+    text-align: center;
+    width: 136px;
+    font-weight: bold;
+}
+
+.content1 .bottom .situation .sport .time li:last-child {
+    border: none;
+}
+
+.content1 .bottom .situation .sport .step {
+    color: #262626;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #e8e8e8;
+}
+
+.content1 .bottom .situation .sport .level {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content1 .bottom .situation .sport .level p {
+    font-size: 24px;
+    color: #262626;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.content1 .bottom .situation .sport .level p span {
+    padding-left: 26px;
+}
+
+.content1 .bottom .situation .temper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content1 .bottom .situation .temper p {
+    font-size: 70px;
+    font-weight: bold;
+    color: #262626;
+    margin: 0;
+    line-height: 2.2;
+}

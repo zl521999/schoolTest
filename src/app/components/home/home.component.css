@@ -1,0 +1,166 @@
+.header {
+    width: 100%;
+    height: 150px;
+    background: #fff;
+    padding: 0px;
+}
+
+.logo {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header-menu {
+    line-height: 64px;
+}
+
+.mainLayout {
+    margin-top: 2px;
+    min-height: 930px;
+}
+
+.sider-menu {
+    height: 100%;
+    border-right: 0;
+}
+
+.inner-layout {
+    padding: 0 2px;
+}
+
+nz-content {
+    background: #fff;
+    padding: 30px;
+    min-height: 280px;
+}
+
+.content1 {
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.content1 .contentLeft {
+    margin-right: 96px;
+}
+
+.content1 .contentLeft .countList {
+    padding-inline-start: 0px;
+}
+
+.content1 .contentLeft .countList li {
+    list-style: none;
+    width: 316px;
+    height: 222px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content1 .contentLeft .countList li:last-child {
+    margin-bottom: 0px;
+}
+
+.content1 .contentLeft .countList li .newsRight p {
+    color: #8c8c8c;
+    font-size: 16px;
+}
+
+.content1 .contentRight .search {
+    width: 490px;
+    margin-bottom: 28px;
+}
+
+.content1 .contentRight .personNews {
+    width: 850px;
+    height: 122px;
+    border: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.content1 .contentRight .personNews .news1 p,
+.content1 .contentRight .personNews .news2 p {
+    color: #8c8c8c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content1 .contentRight .personNews .image {
+    width: 90px;
+    height: 100px;
+    background: pink;
+}
+
+.content1 .contentRight .mainNews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content1 .contentRight .mainNews .mainLeft {
+    display: flex;
+}
+
+.content1 .contentRight .mainNews .mainLeft .classList {
+    width: 200px;
+    height: 624px;
+    border: 1px solid #e5e5e5;
+}
+
+.content1 .contentRight .mainNews .mainLeft .listCard {
+    padding-inline-start: 0px;
+    height: 624px;
+    margin-left: 3px;
+}
+
+.content1 .contentRight .mainNews .mainLeft .listCard li {
+    width: 455px;
+    height: 207px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content1 .contentRight .mainNews .mainLeft .listCard li h4 {
+    color: #8c8c8c;
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content1 .contentRight .mainNews .mainLeft .listCard li .number {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -20px;
+}
+
+.content1 .contentRight .mainNews .mainLeft .listCard li .number .fault,
+.content1 .contentRight .mainNews .mainLeft .listCard li .number .ok {
+    text-align: center;
+}
+
+.content1 .contentRight .mainNews .mainLeft .listCard li .number span {
+    color: #828282;
+    font-size: 20px;
+}
+
+.content1 .contentRight .mainNews .mainLeft .listCard li .number p {
+    color: #505050;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.content1 .contentRight .mainNews .mainRight {
+    margin-left: 80px;
+}
+
+:host /deep/ .ant-table table {
+    width: 210px;
+    height: 624px;
+}
